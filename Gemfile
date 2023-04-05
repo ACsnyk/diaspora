@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 
-gem "rails", "6.1.6.1"
+gem "rails", "6.1.7.3"
 
 # Legacy Rails features, remove me!
 # responders (class level)
@@ -38,7 +38,7 @@ gem "simple_captcha2", "0.5.0", require: "simple_captcha"
 # Background processing
 
 gem "redis", "4.7.0"
-gem "sidekiq", "6.5.1"
+gem "sidekiq", "7.0.0"
 
 # Scheduled processing
 
@@ -90,7 +90,7 @@ gem "uuid", "2.3.9"
 gem "babel-transpiler",  "0.7.0"
 gem "handlebars_assets", "0.23.9"
 gem "jquery-rails",      "4.5.0"
-gem "jquery-ui-rails",   "5.0.5"
+gem "jquery-ui-rails", "6.0.0"
 gem "js_image_paths",    "0.2.0"
 gem "js-routes",         "2.2.4"
 
@@ -105,7 +105,7 @@ gem "leaflet-rails",       "1.7.0"
 
 # Parsing
 
-gem "nokogiri",          "1.13.7"
+gem "nokogiri", "1.13.9"
 gem "open_graph_reader", "0.7.2" # also update User-Agent in features/support/webmock.rb and open_graph_cache_spec.rb
 gem "redcarpet",         "3.5.1"
 gem "ruby-oembed",       "0.16.1"
