@@ -2,11 +2,11 @@
 
 source "https://rubygems.org"
 
-gem "rails", "6.1.6.1"
+gem "rails", "6.1.7.4"
 
 # Legacy Rails features, remove me!
 # responders (class level)
-gem "responders", "3.0.1"
+gem "responders", "3.1.0"
 
 # Appserver
 
@@ -15,7 +15,7 @@ gem "puma", "5.6.5", require: false
 # Federation
 
 gem "diaspora_federation-json_schema", "1.0.1"
-gem "diaspora_federation-rails",       "1.0.1"
+gem "diaspora_federation-rails", "1.1.0"
 
 # API and JSON
 
@@ -26,9 +26,9 @@ gem "yajl-ruby",   "1.4.3"
 
 # Authentication
 
-gem "devise", "4.8.1"
+gem "devise", "4.9.0"
 gem "devise_lastseenable", "0.0.6"
-gem "devise-two-factor", "4.0.2"
+gem "devise-two-factor", "4.1.0"
 gem "rqrcode", "2.1.1"
 
 # Captcha
@@ -89,19 +89,19 @@ gem "uuid", "2.3.9"
 
 gem "babel-transpiler",  "0.7.0"
 gem "handlebars_assets", "0.23.9"
-gem "jquery-rails",      "4.5.0"
-gem "jquery-ui-rails",   "5.0.5"
+gem "jquery-rails", "4.5.1"
+gem "jquery-ui-rails", "6.0.0"
 gem "js_image_paths",    "0.2.0"
-gem "js-routes",         "2.2.4"
+gem "js-routes", "2.2.5"
 
 # Localization
 
 gem "http_accept_language", "2.1.1"
 gem "i18n-inflector-rails", "1.0.7"
-gem "rails-i18n",           "6.0.0"
+gem "rails-i18n", "7.0.1"
 
 # Map
-gem "leaflet-rails",       "1.7.0"
+gem "leaflet-rails", "1.8.0"
 
 # Parsing
 
@@ -242,10 +242,10 @@ end
 
 group :development, :test do
   # RSpec (unit tests, some integration tests)
-  gem "rspec-rails", "5.1.2"
+  gem "rspec-rails", "6.0.0"
 
   # Cucumber (integration tests)
-  gem "cucumber-rails", "2.5.1", require: false
+  gem "cucumber-rails", "2.6.0", require: false
 
   # Jasmine (client side application tests (JS))
   gem "chrome_remote",             "0.3.0"
