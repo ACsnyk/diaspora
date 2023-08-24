@@ -2,11 +2,11 @@
 
 source "https://rubygems.org"
 
-gem "rails", "6.1.6.1"
+gem "rails", "6.1.7.5"
 
 # Legacy Rails features, remove me!
 # responders (class level)
-gem "responders", "3.0.1"
+gem "responders", "3.1.0"
 
 # Appserver
 
@@ -15,7 +15,7 @@ gem "puma", "5.6.5", require: false
 # Federation
 
 gem "diaspora_federation-json_schema", "1.0.1"
-gem "diaspora_federation-rails",       "1.0.1"
+gem "diaspora_federation-rails", "1.1.0"
 
 # API and JSON
 
@@ -26,9 +26,9 @@ gem "yajl-ruby",   "1.4.3"
 
 # Authentication
 
-gem "devise", "4.8.1"
+gem "devise", "4.9.0"
 gem "devise_lastseenable", "0.0.6"
-gem "devise-two-factor", "4.0.2"
+gem "devise-two-factor", "4.1.0"
 gem "rqrcode", "2.1.1"
 
 # Captcha
@@ -74,11 +74,11 @@ group :postgresql, optional: true do
   gem "pg",     "1.4.1"
 end
 
-gem "activerecord-import", "1.4.0"
+gem "activerecord-import", "1.4.1"
 
 # File uploading
 
-gem "carrierwave", "2.2.2"
+gem "carrierwave", "2.2.3"
 gem "fog-aws",     "3.14.0"
 gem "mini_magick", "4.11.0"
 
@@ -89,19 +89,19 @@ gem "uuid", "2.3.9"
 
 gem "babel-transpiler",  "0.7.0"
 gem "handlebars_assets", "0.23.9"
-gem "jquery-rails",      "4.5.0"
-gem "jquery-ui-rails",   "5.0.5"
+gem "jquery-rails", "4.5.1"
+gem "jquery-ui-rails", "6.0.0"
 gem "js_image_paths",    "0.2.0"
-gem "js-routes",         "2.2.4"
+gem "js-routes", "2.2.5"
 
 # Localization
 
 gem "http_accept_language", "2.1.1"
 gem "i18n-inflector-rails", "1.0.7"
-gem "rails-i18n",           "6.0.0"
+gem "rails-i18n", "7.0.1"
 
 # Map
-gem "leaflet-rails",       "1.7.0"
+gem "leaflet-rails", "1.8.0"
 
 # Parsing
 
@@ -129,11 +129,11 @@ gem "omniauth-wordpress",             "0.2.2"
 gem "twitter",                        "7.0.0"
 
 # OpenID Connect
-gem "openid_connect", "1.3.0"
+gem "openid_connect", "1.3.1"
 
 # Serializers
 
-gem "active_model_serializers", "0.9.8"
+gem "active_model_serializers", "0.9.9"
 
 # Tags
 
@@ -189,7 +189,7 @@ group :production do # we don"t install these on travis to speed up test runs
 
   # Third party asset hosting
 
-  gem "asset_sync", "2.15.2", require: false
+  gem "asset_sync", "2.15.3", require: false
 end
 
 group :development do
@@ -201,7 +201,7 @@ group :development do
   gem "pronto-rubocop", "0.11.1", require: false
   gem "pronto-scss",    "0.11.0", require: false
   gem "rubocop",        "0.93.1", require: false
-  gem "rubocop-rails",  "2.9.1", require: false
+  gem "rubocop-rails", "2.10.0", require: false
 
   # Debugging
   gem "pry"
@@ -226,14 +226,14 @@ group :test do
 
   gem "apparition",       "0.6.0"
   gem "capybara",         "3.35.3"
-  gem "database_cleaner-active_record", "2.0.1"
+  gem "database_cleaner-active_record", "2.1.0"
 
   gem "cucumber-api-steps", "0.14", require: false
 
   # General helpers
 
   gem "factory_bot_rails", "6.2.0"
-  gem "shoulda-matchers",  "4.5.1"
+  gem "shoulda-matchers", "5.0.0"
   gem "timecop",           "0.9.5"
   gem "webmock",           "3.14.0", require: false
 
@@ -242,10 +242,10 @@ end
 
 group :development, :test do
   # RSpec (unit tests, some integration tests)
-  gem "rspec-rails", "5.1.2"
+  gem "rspec-rails", "6.0.0"
 
   # Cucumber (integration tests)
-  gem "cucumber-rails", "2.5.1", require: false
+  gem "cucumber-rails", "2.6.0", require: false
 
   # Jasmine (client side application tests (JS))
   gem "chrome_remote",             "0.3.0"
