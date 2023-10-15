@@ -137,7 +137,7 @@ gem "active_model_serializers", "0.9.8"
 
 # Tags
 
-gem "acts-as-taggable-on", "9.0.1"
+gem "acts-as-taggable-on", "10.0.0"
 
 # URIs and HTTP
 
